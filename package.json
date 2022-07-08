@@ -1,0 +1,30 @@
+{
+  "name": "codeworks-movied-angular-exercise",
+  "version": "1.0.6",
+  "description": "A Codeworks exercise to train students",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "codeworksbcn/movied-angular-exercise"
+  },
+  "scripts": {
+    "install": "cd client && npm i .",
+    "precommit": "cd client && ng lint"
+  },
+  "author": "Codeworks",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "cz-changelog": "^1.0.1",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-load-plugins": "^2.0.6",
+    "gulp-replace": "^1.0.0",
+    "husky": "^5.1.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-changelog"
+    }
+  }
+}

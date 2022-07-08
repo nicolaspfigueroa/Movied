@@ -1,0 +1,18 @@
+<div class = "container">
+  <h2>BOX OFFICE</h2>
+  <div class = "movie-list" id = "box-office">
+    <div *ngFor = "let movie of movies">
+      <!--Need to add links / routes to movie details
+      for now, just print names / show movie image-->
+      <app-movie-list-item [movie] = "movie"></app-movie-list-item>
+      </div>
+  </div>
+  <h2>ACTION MOVIES</h2>
+  <div class = "movie-list" id ="category">
+    <div *ngFor = "let categoryMovie of categoryMovies">
+      <!--Need to add links / routes to movie details
+      for now, just print names / show movie image-->
+      <app-movie-list-item [movie] = "categoryMovie"></app-movie-list-item>
+    </div>
+  </div>
+</div>

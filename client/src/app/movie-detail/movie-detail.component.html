@@ -1,0 +1,10 @@
+<button type = "button" (click) = "goBack()"></button>
+<div class = "container" *ngIf = "movie">
+  <!--add movie image-->
+  <img [src]="movie.poster_path" alt="">
+  <div class = "text">
+    <h2>{{movie.title | uppercase}}</h2>
+    <h3>{{movie.overview}}</h3>
+    <h3>{{movie.release_date}}</h3>
+  </div>
+</div>

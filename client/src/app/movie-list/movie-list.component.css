@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: #262626;
+}
+
+h2 {
+  margin: 15px;
+}
+
+.movie-list {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  width: 1em;
+  height: 10px;
+  border-radius: 15px;
+  transition: 0.4s ease-in-out;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: darkslategrey;
+  opacity: 0.6;
+  border-radius: 15px;
+  transition: 0.7s 
+}
+
+::-webkit-scrollbar-thumb:hover{
+  border-radius: 15px;
+  opacity: 1;
+  transition: 0.7s 
+}

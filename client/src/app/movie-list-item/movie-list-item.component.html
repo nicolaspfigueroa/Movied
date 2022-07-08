@@ -1,0 +1,9 @@
+<div class = "card-container">
+  <a routerLink="/movie/{{movie.id}}">
+    <img [src]=movie.poster_path alt="">
+  </a>
+  <div class = "text">
+    <h2>{{movie.title}}</h2>
+    <h2>({{movie.release_date}})</h2>
+  </div>
+</div>
